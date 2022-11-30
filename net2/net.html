@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        body{
+            background-color: black;
+        }
+        header{
+            background-image: url(../img/bg-.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: end;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid crimson;
+            border-radius: 100px;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            padding: 20px;
+            position: absolute;
+            margin-top: -120px;
+            margin-left: 150px;
+        }
+        .ep1{
+            margin-left: 30px;
+            text-align: center;
+            background-color: white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            box-shadow: 0px 6px 15px 10px rgba(243, 6, 6, 0.79);
+            margin-bottom: 15px;
+        }
+        .ep2{
+            margin-left: 30px;
+            text-align: center;
+            background-color: white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            box-shadow: 0px 6px 15px 10px rgba(255, 3, 3, 0.79);
+            margin-bottom: 15px;
+        }
+        .ep3{
+            margin-left: 30px;
+            text-align: center;
+            background-color: white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            box-shadow: 0px 6px 15px 10px rgba(255, 3, 3, 0.79);
+            margin-bottom: 15px;
+        }
+        .ep4{
+            margin-left: 30px;
+            text-align: center;
+            background-color: white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            box-shadow: 0px 6px 15px 10px rgba(255, 3, 3, 0.79);
+            margin-bottom: 15px;
+        }
+        .ep3 p, .ep4 p{
+            width: 341px;
+        }
+        i{
+            color: white;
+        }
+        i:hover{
+            cursor: pointer;
+        }
+        .im1{
+            position: relative;
+        }
+        h3{
+            padding-bottom: 5px;
+        }
+        .temp{
+            background-color: black;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 3.5px;
+        }
+        nav{
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 25px;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            font-size: 30px;
+        }
+        a:hover{
+            color: yellow;
+            background-color: grey;
+            border-bottom: 4px solid crimson;
+        }
+        .ept1{
+            display: grid;
+            grid-template-columns:  340px 340px 350px;
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 20px;
+            justify-content: center;
+            background-color: black;
+            padding-bottom:50px ;
+            padding-top: 50px;
+            border-top: 2px solid white;
+        }
+        footer{
+            background-color: black;
+            text-align: center;
+            padding-bottom: 40px;
+            padding-top: 40px;
+            border-top: 2px solid white;
+        }
+        footer img{
+            width: 150px;
+            padding: auto;
+        }
+        footer a:hover{
+            border-bottom: 3px solid crimson;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        article{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .art1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+        }
+        .art1 p{
+            margin-left: 15px;
+            text-align: justify;
+        }
+        .art2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width:340px;
+            text-align: justify;
+            margin-bottom: 30px;
+            
+        }
+        .art2 p{
+            margin-top: 15px;
+        }
+        .art3{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            width: 500px; 
+        }
+        footer h2{
+            color: white;
+            margin-bottom: 29px;
+            font-family: 'Rubik Microbe', cursive;
+        }
+        input{
+            padding: 10px;
+            width: 830px;
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid crimson;
+        }
+        .fa-magnifying-glass{
+          position: absolute;
+          color: crimson;
+          left: 360px;
+          margin-left: -340px;
+          
+        }
+        .input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            width: 830px;
+            margin-left:auto;
+            margin-right: auto;
+            position: relative;
+        }
+        @media (max-width: 1316px){
+            header{
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+                align-items: center;
+            }
+            .ep1 , .ep3{
+                margin-left: 0;
+            }
+            .ept1{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            article{
+                display: flex;
+                flex-direction: column;
+            }
+            .art2{
+                display: flex;
+                flex-direction: row;
+                width:500px;
+            }
+            .art2 p{
+                margin-left: 5px;
+            }
+            .art3{
+                display: flex;
+                flex-direction: row;
+                text-align: justify;
+            }
+            .art3 p{
+                margin-left: 5px;
+            }
+            .temp a{
+                font-size: 20px;
+                padding: 1px;
+            }
+            nav{
+                padding:0;
+            }
+            footer h2{
+                color: crimson;
+                border-bottom: 1px solid white;
+                width: 447px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .ept1 img{
+                
+            }
+            .input{
+                width: 600px;
+            }
+            .fa-magnifying-glass{
+                margin-left: -340px ;
+            }
+        }
+    </style>
+</head>
+<bodhey>
+    <header> 
+        <div class="ep1"> 
+            <h3>EPISODIO 1</h3>  
+            <div class="im1">
+            <img src="../img/episode-1.jpg" alt="" >
+            <div class="icon">
+                <i class="fa-solid fa-play"></i>
+            </div>
+        </div>
+            <p>Un joven chico aún no sabe que esto a <br> terminado.</p>
+        </div>
+        <div class="ep2">
+            <h3>EPISODIO 2</h3>  
+            <div class="im1">
+            <img src="../img/episode-2.jpg" alt="">
+            <div class="icon">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div>
+                <p>Los tres amigos se sorprenden al descubir <br> un secreto jamas revelado</p>
+            </div>
+            </div>
+        </div>
+        <div class="ep3">
+            <h3>EPISODIO 3</h3> 
+            <div class="im1">
+            <img src="../img/episode-3.jpg" alt="">
+            <div class="icon">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div>
+                <p> Una madre desesperada, escucha la voz de su Hijo desparacdio.
+            </div>
+            </div>
+        </div>
+        <div class="ep4">
+            <h3>EPISODIO 4</h3> 
+            <div class="im1">
+            <img src="../img/episode-4.jpg" alt="">
+            <div class="icon">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div>
+                <p>La ayuda de una desconocida les ayudara a acabar con el mal.
+            </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="input">
+            <input type="text" placeholder=" buscar nueva serie">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="temp">
+            <nav>
+                <a href="">Temporada 1</a>
+                <a href="">Temporada 2</a>
+                <a href="">Temporada 3</a>
+                <a href="">Temporada 4</a>
+            </nav>
+        </div>
+        <div class="ept1">
+            <img src="../img/similar-gotham.jpg" alt="">
+            <img src="../img/similar-ollie.jpg" alt="">
+            <img src="../img/similar-sombra-hueso.jpg" alt="">
+            <img src="../img/similar-timeless.jpg" alt="">
+            <img src="../img/similar-black-summer.jpg" alt="">
+            <img src="../img/similar-the-witcher-2.jpg" alt="">
+        </div>
+        <article>
+            <div class="art1">
+                <div class="iart1" >
+                    <img src="../img/similars-5.jpg" alt="">
+                </div>
+                <div class="tart1">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt est ut nihil aperiam enim? Recusandae nisi provident ex cum dolores ab quas sed vero incidunt, voluptatem rem voluptate amet nam!</p>
+                </div>
+            </div>
+            <div class="art2">
+                <div class="iart2" >
+                    <img src="../img/similars-4.jpg" alt="">
+                </div>
+                <div class="tart2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt est ut nihil aperiam enim? Recusandae nisi provident ex cum dolores ab quas sed vero incidunt, voluptatem rem voluptate amet nam!</p>
+                </div>
+            </div>
+            <div class="art3">
+                <div class="iart3" >
+                    <img src="../img/similars-3.jpg" alt="">
+                </div>
+                <div class="tart2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt est ut nihil aperiam enim? Recusandae nisi provident ex cum dolores ab quas sed vero incidunt, voluptatem rem voluptate amet nam!</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <h2>OTRAS PLATAFORMAS DE STREMING</h2>
+        <a href=""><img src="Amazon_Prime_Video_logo.svg.png" alt=""></a> 
+        <a href=""><img src="Disney+_logo.svg.png" alt=""></a>
+        <a href=""> <img src="HBO_Max_Logo.svg.png" alt=""></a>
+    </footer>
+</bodhey>
+</html>
